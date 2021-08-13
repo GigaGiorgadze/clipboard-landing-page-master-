@@ -1,0 +1,360 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    background: url('./images/bg-header-desktop.png') no-repeat;
+    height: 100vh;
+    width: 100vw;
+    max-width:100%; 
+}
+.headerChild img{
+    width: 10%;
+}
+.headerChild{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.8vh;   
+    width: 70%;
+}
+.headerChild p{
+    text-align: unset;
+    width: unset;
+}
+ h1{
+    color: hsl(210, 10%, 33%);
+    font-size: 3.7vh;
+    margin: 0;
+}
+
+.headerText{
+    text-align: center;
+    width: 50%;
+}
+.headerBtns{
+    height: 20%;
+    width: 40%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+#IOS{
+    width: 40%;
+    height: 25%;
+    transition: transform 100ms;
+    color: white;
+    border: none;
+    background: hsl(171, 66%, 44%);
+    border-radius: 5vh;
+    font-size: 1.8vh;
+}
+#mac{
+    width: 40%;
+    height: 25%;
+    color: white;
+    transition: transform 100ms;
+    border: none;
+    background: hsl(233, 100%, 69%);
+    border-radius: 5vh;
+    font-size: 1.8vh;
+}
+.headerBtns>button:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+#keepTrack{
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    width: 53%;
+    height: 20%;
+}
+.pc{
+    height: 100vh;
+    width: 100vw;
+    max-width:100%; 
+}
+.pc>.left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pc>.left>img{
+    width: 100%;
+}
+.pc>.right{
+    width: 50%;
+    height: 100%;
+}
+.pc>.right>.rightText{
+    width: 80%;
+    height: 70%;
+}
+
+.pc>.right>.rightText>p{
+    width: 55%;
+    text-align: start;
+}
+.tablet{
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.tabletTop{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 2vh;
+    width: 40%;
+    text-align: center;
+}
+.tabletBot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+.superCharge{
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    justify-content: flex-start;
+}
+.superChargeTop{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.superChargeMid{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.SCChilds{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: unset;
+    padding-top: 5%;
+    box-sizing: border-box;
+}
+.SCChilds>p{
+    width: 100%;
+}
+.SCChilds img{
+    width: 15%;
+    height: 15%;
+}
+.superChargeBot{
+    width: 85%;
+    display: flex;
+    height: 20%;
+    align-items: center;
+    justify-content: space-around;
+}
+.bot{
+    height: 50vh;
+    width: 100vw;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.bot>.headerBtns{
+    height: 40%;
+}
+footer{
+    height: 30vh;
+    background: hsl(210, 25%, 94%);
+}
+.footerChild{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footerChild>img{
+    width: 7%;
+    height: 40%;
+}
+.footerLinks{
+    display: flex;
+    height: 50%;
+    width: 50%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+.footerSocials{
+    width: 30%;
+    height: 50%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+}
+.footerLinks p{
+    width: 30%;
+    text-align: unset;
+}
+.footerLinks p:hover{
+    color: hsl(171, 66%, 44%);
+    cursor: pointer;
+}
+.footerSocials>i{
+    margin-right: 5%;
+   font-size: 3.5vh;
+}
+.footerSocials>i:hover{
+    color: hsl(171, 66%, 44%);
+    cursor: pointer;
+}
+@media screen and (max-width:800px) {
+    header{
+        background-image: url('./images/bg-header-mobile.png');
+    }
+    .headerChild{
+        width: 100%;
+    }
+    .headerChild img{
+        width: 30%;
+    }
+    .headerText{
+        width: 100%;
+    }
+    .headerBtns {
+        width: 100%;
+    }
+    #keepTrack{
+        width: 90%;
+    }
+    .pc{
+        flex-direction: column;
+        height: 130vh;
+        justify-content: unset;
+        align-items: unset;
+    }
+    .pc>.left{
+        width: 100%;
+    }
+    .pc>.right{
+        width: 100%;
+        align-items: unset;
+        
+        justify-content: flex-end;
+    }
+    .rightText{
+        width: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100vh;
+    }
+    .rightText p{
+        text-align: center !important;
+    }
+    .tablet{
+        flex-direction: column;
+        width: 100%;
+        height: 70vh;
+    }
+    .tablet img{
+        width: 100%;
+    }
+    .tablet h1{
+        text-align: center;
+    }
+    .superChargeMid{
+        flex-direction: column;
+        height: 100%;
+    }
+    .superCharge{
+        height: 200vh;
+        align-items: center;
+    }
+    .SCChilds{
+        width: 100%;
+    }
+    .superChargeBot{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .tabletBot{
+        height: 100%;
+    }
+    .bot h1{
+        text-align: center;
+        font-size: 4vh;
+    }
+    .bot P{
+        width: 100%;
+    }
+    .bot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .headerBtns{
+        flex-direction: column;
+        align-items: center;
+    }
+    .headerBtns>#IOS,
+    .headerBtns>#mac{
+        width: 80%;
+        height: 30%;
+    }
+    .footerChild{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    footer{
+        height: 75vh;
+    }
+    .footerChild>img{
+        height: 10%;
+        width: 20%;
+    }
+    .footerLinks{
+        margin: 0;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .footerLinks p{
+        width: unset;
+    }
+    .footerSocials{
+        height: fit-content;
+    }
+    i{
+        margin: 0 10%;
+    }
+    
+}
